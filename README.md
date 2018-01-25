@@ -1,2 +1,5 @@
 # Battleship_Simulator
 Simulator for the game of battleship
+
+Adding battleship simulator and tests.  I am also adding probability distributions that I generated using this simulator for the aircraft carrier.  The aircraft carrier is 5 units long.  The probability distribution represents the likely hood of finding the ship on any given square of the game board.  On an open board, ships are less likely to be found in the corners and more likely to be found in the center of the board.  The probability distribution can actually be calculated.  As the number of simulations I run to approximate the distribution increases the closer it gets to the correct answer.
+     This simulator consistently wins the game in an average of 59-60 moves using random attacks and a ship killing algorithm once a ship is found.  This ship killing algorithm takes into account the remaining ships on the board and the probability distribution for each remaining ship after every move it makes.  I plan to do research with this simulator to test out different strategies for the game of battleship.
