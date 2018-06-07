@@ -15,7 +15,9 @@ class BattleshipTestCase(unittest.TestCase):
     def tearDown(self):
         del(self.simulation1)
         del(self.ship1, self.ship2, self.ship3, self.ship4, self.ship5)
-
+        
+    #these tests provide an initial attack coordinate at the start of each simulation.
+    
     #ONE SHIP TESTS
     def test_algorithm1(self):
         self.simulation1.ships = [self.ship1]
@@ -93,7 +95,7 @@ class BattleshipTestCase(unittest.TestCase):
 
     #FIVE SHIP TESTS
 
-      # test_algorithm 10 through 11  basic structure:
+      # test_algorithm 12 through 13  basic structure:
       #
       #   5432
       #3335432
