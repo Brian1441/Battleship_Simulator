@@ -6,9 +6,9 @@ from battleship_simulation import Ship,Square,Simulator
 class BattleshipTestCase(unittest.TestCase):
     def setUp(self):
         self.simulation1 = Simulator()
-        self.ship1 = Ship(5)
-        self.ship2 = Ship(4)
-        self.ship3 = Ship(3)
+        self.ship1 = Ship(5)  #this ship is 5 units long
+        self.ship2 = Ship(4)  #this ship is 4 units long
+        self.ship3 = Ship(3)  # etc.
         self.ship4 = Ship(3)
         self.ship5 = Ship(2)
         
@@ -95,7 +95,7 @@ class BattleshipTestCase(unittest.TestCase):
 
     #FIVE SHIP TESTS
 
-      # test_algorithm 12 through 13  basic structure:
+      # test_algorithm 12 through 13:  basic layout of ships on gameboard:
       #
       #   5432
       #3335432
