@@ -17,7 +17,7 @@ class Ship():
         #return 1: for sunk
         #return 0: for not sunk
         if self.sunk==1:
-            return 0
+            return 1
         hitcount=0
         for i in self.location:
             square0 = game_board[i[0]][i[1]]
